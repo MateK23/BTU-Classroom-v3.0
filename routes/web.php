@@ -19,10 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/courses', 'CoursesController@index')->name('courses');
-Route::post('/courses', 'CoursesController@store');
-Route::get('/courses/create', 'CoursesController@create');
+Route::get('/courses', 'CoursesController@index')->name('courses')->middleware('auth');;
+Route::post('/courses', 'CoursesController@store')->middleware('auth');;
+Route::get('/courses/create', 'CoursesController@create')->middleware('auth');;
 
-Route::get('/students', 'StudentsController@index');
+Route::get('/students', 'StudentsController@index')->middleware('auth');;
 
-Route::get('/table', 'TableController@index')->name('table');
+Route::get('/table', 'TableController@index')->name('table')->middleware('auth');;
