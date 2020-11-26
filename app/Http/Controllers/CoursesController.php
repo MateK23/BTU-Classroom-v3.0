@@ -21,7 +21,7 @@ class CoursesController extends Controller
         return view('pages.create');
     }
 
-    public function store(Request $request)
+    public function store()
     {
         $data = request()->validate([
             'name' => 'required',
@@ -33,6 +33,6 @@ class CoursesController extends Controller
         ]);
 
 
-        \App\Courses::create();
+        \App\Courses::create($data);
     }
 }

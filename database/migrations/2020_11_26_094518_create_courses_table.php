@@ -20,7 +20,7 @@ class CreateCoursesTable extends Migration
             $table->integer('score')->nullable();
             $table->integer('status')->nullable(); # 1 - active, 2 - archived, 3 - available
             $table->string('lecturer')->nullable(); #lecturer id
-            $table->integer('max_credit');
+            $table->integer('max_credit')->nullable();
             $table->integer('credit')->nullable();
             $table->string('requirement')->nullable();
             $table->integer('week_day')->nullable();

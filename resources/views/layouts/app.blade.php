@@ -116,7 +116,7 @@
 
             <li>
                 <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
-                    <span class="nav-link-text">Lector Controls</span>
+                    <span class="nav-link-text">Moderator Controls</span>
                     <b class="caret2 mt-1"></b>
                 </a>
 

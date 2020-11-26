@@ -54,7 +54,7 @@
 
             </div>
             <div class="card">
-                <div class="card-header">Available Courses <a href="#">add</a></div>
+                <div class="card-header">Available Courses</div>
 
                 <div class="card-body">
 

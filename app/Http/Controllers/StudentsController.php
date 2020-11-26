@@ -12,7 +12,8 @@ class StudentsController extends Controller
     {
         $data = DB::table('users')->select('id', 'name', 'email', 'p_number')->where('access_level', '=', 1)->get();
         $data2 = DB::table('users')->select('id', 'name', 'email', 'p_number')->where('access_level', '=', 2)->get();
+        $data3 = DB::table('users')->select('id', 'name', 'email', 'p_number')->where('access_level', '>', 2)->get();
 
-        return view('pages.students', compact('data', 'data2'));
+        return view('pages.students', compact('data', 'data2', 'data3'));
     }
 }
